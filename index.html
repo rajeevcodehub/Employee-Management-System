@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Management</title>
+  </head>
+  <script defer src="src/index.js"></script>
+  <link rel="stylesheet" href="src/styles.css" />
+  <body>
+    <div class="header">
+      <h1>Employee Management System</h1>
+      <button class="addEmployeeBtn">Add Employee</button>
+    </div>
+    <div class="employees">
+      <div class="employeeList">
+        <p class="employeesListTitle">Employee List</p>
+        <div class="employeeNameList"></div>
+      </div>
+      <div class="employeeDetail">
+        <p class="employeesDetailTitle">Employee Information</p>
+        <div class="employeeNameInfo"></div>
+      </div>
+    </div>
+    <!-- add employee model -->
+    <div class="addEmployee">
+      <form class="addEmployeeCreate">Add New Employee
+        <div>
+            <input type="text" name="firstName" placeholder="Enter First Name" required />
+            <input type="text" name="lastName" placeholder="Enter Last Name" required />
+            <input type="text" name="imgURL" placeholder="Image URL (optional)"  />
+            <input type="email" name="email" placeholder="Enter Email" required />
+            <input type="number" name="contactNumber" placeholder="Enter Contact Number" required />
+            <input type="number" name="salary" placeholder="Enter Salry" required />
+            <input type="text" name="address" placeholder="Enter Address" required />
+            <input type="date" name="dob" placeholder="Date of Birth" class="addEmployeeDOB" required />
+            <input type="submit" class="addEmployeeCreateSubmit" value="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
